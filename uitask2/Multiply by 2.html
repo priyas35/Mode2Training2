@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var luckyNumbers = [3, 5, 7, 9];
+
+console.log(luckyNumbers);
+
+document.getElementById("demo").innerHTML = luckyNumbers ;
+
+function myFunction() {
+for(var i=0; i<luckyNumbers.length; i++) {
+	//Let's take the constant factor as 2
+	luckyNumbers[i] = luckyNumbers[i] * 2;
+}
+
+  document.getElementById("demo").innerHTML = luckyNumbers;
+}
+</script>
+
+</body>
+</html>
+

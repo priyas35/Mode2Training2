@@ -1,0 +1,70 @@
+git stash(it is the temporary folder to keep the files and folders  to bin,so that the folder can add a particular folder)
+
+git clone(if you want to send the remaining files to be send to github you should clone from remote to local then it will sync with the local after that we can add our files
+
+before adding your files all ways sync up the file with the remote repository by using clone command
+
+
+
+Jenkins:
+    continuous integration practices and continuous delivery orchestration
+    open source
+    combination of maven ,jenkins,junit is jecaco 
+
+continuous integration:(CI)
+      is a development practice that requires developers to integrate code into a shared repository several times a day.
+      It is process of running your tests on non developer(testers machine) automatically when someone pushes new code into the source repository.
+
+Jenkins:
+     is a self contained open source automation server which can be used to automate all sorts of tasks related to building,testing,delevering or deploying s/w.
+     it can be installed through native sys packages ,docker,or even run standalone by any machine with a JRE installed.
+     open source automation server
+
+Jenkins Architecture:
+        master slave Architecture.
+        jenkin(master)----->windows(slave)
+                      ----->Linex(slave)
+
+        jenkin server is a web dashboard which is nothing but powered from a war file default run on 8080 ports.
+        by default one node is configured and another is running.
+
+Why jenkins:
+  To integrate more frequently detect errors quicker,improve quality and reduce cost.
+  coodinate the running of tasks as part of work flows.
+complile ,test and package,deploy,scrip and install.
+
+Jenkins Terminalogy:
+
+Job:
+    a unit of work for a project
+view:
+    user defined collection of jobs or a workflow.
+master:
+    the central jenkins master does job scheduling 
+slave:
+    executes one or more jobs within slots
+workspace:
+    the working area where job is to be done
+Plugin:
+user defined collection of jobs or workflow
+
+How to install jenkins
+
+How do you trigger your build whenever you commit
+github
+settings
+webhooks
+edit
+
+echo "hello world"
+echo "Job Name--->" $(JOB_NAME)
+echo "build number---->"$(BUILD_NUMBER)
+
+https://github.com/
+
+build trigger click the checkbox build whenever....
+
+maven in 5 minutes(refer)
+maven surefile plugin
+
+     

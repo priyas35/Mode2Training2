@@ -1,0 +1,167 @@
+Reason for devOps success
+--------------------------
+1.Use of agile.
+2.Demand for an increased rate of production.
+3.Wide availability of virtualized and cloud infrastructure.
+4.Increased usage of data centre automation and configuration.
+5.A critical mass of publicity available best practices.
+
+
+DevOps has helped organisations realize the following benefits:
+--------------------------------------------------------------
+1.increased release velocity.
+2.shorter lead times.
+3.reduced time to recover upon failiure.
+
+waterfall:
+----------
+a set of principles that enables greater flexibility increased transperewncy and the ability toto adapt to change.
+
+agile:
+------
+Requirements are not fixed and changes frequently development cycles are short.
+
+Devops:
+-------
+Requirements are not fixed and changes frequently
+Devs needs to be agile.
+Ops needs to be agile.
+
+why agile and devops:
+----------------------
+Agile vs DevOps
+----------------
+stackholders and communication chain in a typical IT process:
+customer and software requirements <-------> developer&tester <------> operations& IT Infrastructure 
+
+agile addresses gaps in customer and developer communications:
+customer and software requirements <-------> developer&tester <------> operations& IT Infrastructure 
+                                gap---->solution Agile
+
+Devops addresses gaps in developer and IT operations communications:
+customer and software requirements <-------> developer&tester <------> operations& IT Infrastructure 
+                                                        gap---->solution Agile
+
+CTB--->development
+RTB---->Operation
+
+
+6 C's of Devops:'
+1.Continuous bussiness planning 
+2.Collabrative Development
+3.Continuous Testing
+4.Continuous Release and Deployment
+5.Continuous monitoring 
+6.Collabrative customer feedback and optimization
+
+Build:
+------
+code
+compile
+unit test
+validate
+package
+deploy or install
+
+Build Automation tool:
+----------------------
+jenkins------>heart of devop implementation.
+
+Agenda:
+-------
+1.Git Introduction
+2.Git commands
+3.Git Examples
+
+local vs cvc
+-------------
+cvcs--->Centralized Version control System
+Check in--->Pushing your code
+Check out---->pull out th latest version of the code.
+
+DVCS--->Distributed Version Control System
+-----------------------------------------------
+Instead of check in and check out we have push and pull.
+server copy is available in all the distributed computers,so everybody has the entire repository of all the files.
+
+Git clone:
+----------
+it is defined as the server has the same repository to everyone,so that we can update and use the latest version.
+
+Short History of Git:
+--------------------
+in 2002 the Linex Kernel project began using a proprieatary DVCS called BitKeeper.
+In 2005 the relationship b/w the community that developed the Linex Kernel and the commercial company that developed BitKeeper broke down,and the tool's free of charge.
+Benefits:
+Speed
+Simple Design
+Strong support for non linear development(1000 of parallel branches)
+Fully Distributed
+Able to handle large projects
+
+Two components of git:
+Local(our machine)
+working directory(where you keeping files in folder.
+Stagging area 
+Remote(github.com)
+
+
+$dir
+$ ls-al-------->list all
+$ git init ------->Initialization of git
+$ git add file.txt---------->Addin g
+$ git rm --cached file.txt
+$ git commit -m "initial file"
+$ git log --oneline ------->gives a commit id each commit id denotes the vertion  
+$ git remote -v   ---->find all the remote directories(-v verbos)
+$ git remote add origin https:....... from github(url from github.com)
+$ git push -u origin master  ----------->push the file to github(-u upstream)
+$ git add .  ---------->it adds all the  files and folders
+$ pwd --------->current folder
+$ cd ------->current Directory
+$ git clone url(from github)
+$ pwd
+$ cd 3009(your folder)
+$ ls-al
+$ pwd
+$ cp /c/Devops/3009/file.txt
+$ vi file 
+
+
+How to create branch:
+-----------------------
+Branching and merging in github.
+creating branch.(we have master branch and development branch i.e replica of master branch)
+pull request.
+merge.
+
+Merge conflict:
+--------------- 
+two Merge request on the sametime means it will throw merge conflict.
+
+gittag:
+---------
+creates a tags for the vertions
+
+gitconfig --user.name
+gitconfig --user.emailid
+
+git merge vs git rebase
+
+git stash(it is the temporary folder to keep the files and folders  to bin,so that the folder can add a particular folder)
+
+git clone(if you want to send the remaining files to be send to github you should clone from remote to local then it will sync with the local after that we can add our files
+
+before adding your files all ways sync up the file with the remote repository by using clone command
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+remote repository:(binary repository stores the jar files)
+nexus
+artifactory
+maven
+
+github(for source code management)
+
+maven phases:
+clean - delete target directory
+validate - validate if the project is correct
+comile - compile source code,classes stored in targets/classes
+test -run tests
+package - take the compiled code package it in its distributable format,eg:jar war
+verify-run any checks to verify the package is valid and meets quality criteria
+install-install the package to the local repository
+deploy -deploy the project
+
+Jenkins pipeline:(
+    - contains a series of stages and steps
+   +-------------------+-------------------------+
+ Build               Test                     Deploy
+  (stage)  
+(set of steps per stage)                      + - connector
+    jenkins is an automation engine which supports a number of automation patterns.
+    supports simple continuous integration to comprehensive CD pipelines.
+
+pipeline concepts:
+pipeline 
+node- slave node ,it can be mapped on each stage or at one node)
+stage 
+step
+
+Pipeline Scripting:
+Declarative pipeline(recommended)
+scripted pipeline
+
+scripted pipeline:
+jenkinsfile(scripted pipeline)
+node{
+stage('Build'){
+   //
+}
+stage('Test'){
+ //
+}
+stage('Deploy'){
+  //
+}
+
+Declarative pipeline(recommended):
+agent any - any available solave node for executable job)
+
+jenkinsfile(scripted pipeline)
+pipeline{
+ agent any
+stages{
+
+stage('Build'){
+ steps{
+   sh 'make'
+}
+stage('Test'){
+   sh 'mackcheck'
+   junit 'reports/**/.xml'
+}
+stage('Deploy'){
+  //
+}
+
+pipeline-declarative pipeline specific ----> a pipeline's code defines your entire build process,which typically includes stages for building an application testing it and then delevering it.
+
+agent -defines jenkins to allocate an executor (on a node) and workspace for the entire pipeline
+
+steps --->single task
+
+sh ---> is a pipeline step
+
+junit is another pipeline step for arranging the test reports.
+
+node --> node is a machine part of jenkins env and capable of executing a pipeline
+
+pipeline be created:
+
+
+go to jenkins.io --->documentation ------> pipeline ----->study
+
+
+
+
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+ var list  = [90,10,30,40,5];
+document.getElementById("demo").innerHTML = list;
+
+function myFunction() {
+
+list.unshift("6");
+  document.getElementById("demo").innerHTML = list;
+}
+</script>
+
+</body>
+</html>
+

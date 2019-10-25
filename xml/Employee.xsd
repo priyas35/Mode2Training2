@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="file:///C:/Users/Coalesce/Desktop/xml/Employee.xsd"
+targetNamespace="file:///C:/Users/Coalesce/Desktop/xml/Employees1.xml"
+xmlns="file:///C:/Users/Coalesce/Desktop/xml/"
+elementFormDefault="qualified">
+
+
+<xs:element name="Employee">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="EmpNo" type="xs:integer"/>
+      <xs:element name="EmpName" type="xs:string"/>
+      <xs:element name="Salary" type="xs:decimal"/>
+      <xs:element name="Band" type="xs:string"/>
+<xs:element name="DateOfJoin" type="xs:date"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

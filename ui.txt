@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    .header {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}
+  .footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}
+   
+</style>
+</head><p>&nbsp;</p>
+<h2>Three Equal Columns</h2>
+  <div class="header" >
+  <p>Welcome</p>
+</div>
+<div class="row">
+<div class="column" style="background-color: #ff0000;">
+<h2>Column 1</h2>
+<p>Anisha</p>
+</div>
+<div class="column" style="background-color: #00ff00;">
+<h2>Column 2</h2>
+<p>Achuu</p>
+</div>
+<div class="column" style="background-color: #0000ff;">
+<h2>Column 3</h2>
+<p>Priya</p>
+</div>
+ 
+<div class="footer" >
+  <p>Thank You</p>
+</div>
+</div>

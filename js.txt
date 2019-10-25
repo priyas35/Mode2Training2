@@ -1,0 +1,5 @@
+arrow functions:
+Points the parent object.
+functions:
+Points the current object.
+

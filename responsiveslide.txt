@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 22%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  margin: 6px;
+}
+.column2 {
+  float: left;
+  width: 22%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  margin: 6px;
+}
+  .column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  margin: 6px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  /* Style the header */
+.header {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+  margin: 6px;
+width: 50%;
+}
+  
+ 
+
+@media only screen and (max-width: 320px) {
+  /* For mobile phones: */
+   .column,.column1,.column2 {
+    width: 100%;
+  }
+ 
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+  
+  
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>
+    <p>
+      &nbsp;
+    </p>
+  </h1>
+</div>
+
+<div class="row">
+   <div class="column" style="background-color:red;">
+    
+  </div>
+  <div class="column1" style="background-color:green;">
+    
+  </div>
+ 
+  <div class="column2" style="background-color:orange;"><h2>
+    
+    </h2><p>
+    &nbsp;
+    </p>
+  </div>
+    
+  </div>
+  
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+  
+  .column {
+  float: left;
+  width: 66.66%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  border:  solid black;
+  border-width: 5px;
+  text-align:center;
+  
+  
+}
+
+/* Create three equal columns that floats next to each other */
+.nav {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  border-top:  solid black;
+  border-left:  solid black;
+  border-bottom:  solid black;
+  border-width: 5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    .header {
+  background-color:Red;
+  color: Black;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  border-top:  solid black;
+  border-left:  solid black;
+  border-right:  solid black;
+  border-width: 5px;
+}
+  .footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  border-bottom:  solid black;
+  border-left:  solid black;
+  border-right:  solid black;
+  border-width: 5px;
+  }
+  img {
+  display: block;
+  align:left;
+  float: left;
+}
+#hp  {
+float: left;    
+ margin: 0 15px 0 0;
+}
+ 
+
+   
+</style>
+</head><p>&nbsp;</p>
+
+  <div class="header" >
+  <p>HCL</p>
+</div>
+<div class="container-row">
+<div class="nav" style="background-color: Pink;">
+  <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</div>
+<div class="column" style="background-color: #00ff00;">
+<h2>Content</h2>
+  
+  <p><img src="paris.jpg" alt="Paris" style="width:40%;">HCL Technologies Limited is an Indian multinational information technology (IT) service and consulting company headquartered in Noida, Uttar Pradesh.The company has offices in 42 countries including the United Kingdom, the United States, France, and Germany with a worldwide network of R&D, "innovation labs" and "delivery centers", and 137,000+ employees and its customers include 250 of the Fortune 500 and 650 of the Global 2000 companies.
+</p></div>
+
+ 
+<div class="footer" >
+  <p>Footer</p>
+</div>
+</div>

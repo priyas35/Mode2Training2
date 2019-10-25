@@ -1,0 +1,99 @@
+sonarQube
+---------
+  -(static code analysis)
+  -one of the effective static analysis tool to improve code quality,i.e continuous inspection is happened so that the code
+    thoroughly tested at each step so that atlast we get a proper output.
+  - It tells the better way of analysing the code for best practices.
+
+software characteristics:
+1.naming conventions should be followed.
+2.duplicate code should not be used.
+3.logic should not be complex.
+4.the code has unit tests.
+5.code should have good design and architecture.
+6.the public API should have good documentation and commands.
+7.the code should not have any bugs and performence issues.
+
+
+Error Attributes:  
+Blocker       - 5
+Critical      - 4
+Major         - 3
+Minor         - 2
+Info          - 1
+
+Need of static code analysis:
+1.detective errors.
+2.code formatting.
+3.metrics computation.
+
+Checkstyles:
+open source tool that focus on the code conventions.
+
+PMD:
+   main focus:Bad Practices
+Ex:
+  catching exception without doing anything.
+  having dead code
+  too many complex method
+  direct use of implementations instead of interfaces 
+  synchronization on boolean
+  
+diff b/w function and procedure:
+function:
+    -may or maynot return a value.
+    -to perform some computations.
+procedure:
+    -it should not have a return type.
+    -to perform actions like insert,update,delete.
+
+MEAN stand:
+M-mongodb(non relational database)
+E-express
+A-angular
+N-nodejs
+
+LAMP stand:
+
+MERN stand:
+M-mongodb(non relational database)
+E-express
+R-reactjs
+N-nodejs
+
+HP 45:
+mainfocus:security vulnarability
+
+SonarQube:
+  collects and analysis source code ,measuring quality and providing reports for your projects.
+  it combines static and dynamic analysis tool.
+  it covers coding rules,test coverages,duplication,API documentation complexity and architecture providing these details in the dash board.
+
+refer:
+sonarqube.org
+sonarlint.org
+sonar cloud
+
+quality gate 
+quality profile
+
+code smell (probable error in future)
+technical debt(time taken to fix the bugs)
+
+sonarqube default port 9000
+jenkins default port 8080
+tomcat default port 8080
+
+maven plugin,
+deploy to container plugin we should install in jenkins.
+deploy war to the container
+
+maven snapshot (workin progress)
+release(ready to deploy)
+
+
+
+
+
+
+

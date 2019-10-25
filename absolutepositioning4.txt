@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+ 
+  .cent {
+ 
+  align: center;
+  position: absolute;
+  width: 100px;
+	height: 100px;
+	background-color: red;
+  top: 40%;
+  left: 45%;
+  text-align: center;
+}
+.box {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	
+}
+
+.right {
+	right: 0px;
+}
+
+.left {
+	left: 0px;
+}
+
+.top {
+	top: 0px;
+}
+
+.bottom {
+	bottom: 0px;
+}
+</style>
+   </head>
+
+<div class="box top left" style="background-color: blue;text-align:center;">Blue</div>
+<div class="box top right" style="background-color: green;text-align:center;">Green</div>
+<div class="box bottom left" style="background-color: yellow;text-align:center;">Yellow</div>
+<div class="box bottom right" style="background-color: pink;text-align:center;">Pink</div>
+  <div class="cent">Center</div>
+</html>

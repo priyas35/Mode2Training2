@@ -1,0 +1,118 @@
+<html lang="en" >
+<head>
+<style>
+body {
+  background: #212121;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  overflow-y: scroll;
+  color: #212121;
+}
+ 
+p {
+  font-size: 14px;
+  line-height: 22px;
+  font-style: italic;
+  text-align: left;
+  margin: 0;
+  color: #333;
+  padding-left: 15px;
+  margin-top: 40px;
+  border-left: 5px solid rgb(42,177,206,0.3);
+}
+ul {
+  float: left;
+  width: 100%;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+ul li {
+  width: 33.3333%;
+  height: auto;
+  float: left;
+  padding-left: 10px;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+ul li:first-child {
+  padding-left: 0;
+}
+ul li .textBlock {
+  background: #fefefe;
+  padding: 20px;
+  border-top: 16px solid #2ab1ce;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+ul li .textBlock.show {
+  opacity: 1;
+}
+</style>
+  <meta charset="UTF-8">
+<script>
+(function () {
+  equalHeight(false);
+})();
+ 
+window.onresize = function(){
+  equalHeight(true);
+}
+ 
+function equalHeight(resize) {
+  var elements = document.getElementsByClassName("equalHeight"),
+      allHeights = [],
+      i = 0;
+  if(resize === true){
+    for(i = 0; i < elements.length; i++){
+      elements[i].style.height = 'auto';
+    }
+  }
+  for(i = 0; i < elements.length; i++){
+    var elementHeight = elements[i].clientHeight;
+    allHeights.push(elementHeight);
+  }
+  for(i = 0; i < elements.length; i++){
+    elements[i].style.height = Math.max.apply( Math, allHeights) + 'px';
+    if(resize === false){
+      elements[i].className = elements[i].className + " show";
+    }
+  }
+}
+</script>
+  <title>JavaScript Equal Heights | Webdevtrick.com</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+  <ul>
+  <li>
+    <div class="textBlock equalHeight">
+      <h1>JavaScript Equal Heights</h1>
+      <h3>Section 1</h3>          
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum congue risus sit amet consequat. Donec nunc velit, pellentesque a lacus eget.</p>
+    </div>
+  </li>
+  <li>    
+    <div class="textBlock equalHeight">
+      <h1>JavaScript Equal Heights</h1>
+      <h3>Section 2</h3>          
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum congue risus sit amet consequat. Donec nunc velit, pellentesque a lacus eget, 
+        iaculis feugiat magna. Sed molestie, purus in efficitur mollis, lacus tellus pharetra orci, eu luctus elit neque vel nunc. Integer et convallis justo. Aliquam erat volutpat.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum congue risus sit amet consequat. Donec nunc velit, pellentesque a lacus eget.</p>
+    </div>
+  </li>
+  <li>
+    <div class="textBlock equalHeight">
+      <h1>JavaScript Equal Heights</h1>
+      <h3>Section 3</h3>          
+      <p>In hac habitasse platea dictumst. Integer vulputate lectus vel maximus bibendum. Suspendisse blandit, ipsum accumsan porta varius, metus sapien faucibus ante, 
+        id placerat eros eros nec tortor. Duis commodo lobortis lacus in varius. Mauris quis elit nunc.</p>
+    </div>
+    
+  </li>
+</ul>
+    
+ 
+</body>
+</html>
